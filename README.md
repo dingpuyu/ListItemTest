@@ -5,7 +5,13 @@
 各种状态下的图片
 默认初始状态
 ![初始状态](https://github.com/dingpuyu/ListItemTest/blob/master/ListItemTest/pro/images/20151117-0.png)
+
+
+
 长按删除
 ![长按删除状态](https://github.com/dingpuyu/ListItemTest/blob/master/ListItemTest/pro/images/20151117-1.png)
+
+
+
 删除后
 ![删除后](https://github.com/dingpuyu/ListItemTest/blob/master/ListItemTest/pro/images/20151117-2.png)
