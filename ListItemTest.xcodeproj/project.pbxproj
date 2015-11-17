@@ -15,6 +15,9 @@
 		BA0B283B1BF2CBBE0041BB5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA0B28391BF2CBBE0041BB5A /* LaunchScreen.storyboard */; };
 		BA0B28461BF2CBBE0041BB5A /* ListItemTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0B28451BF2CBBE0041BB5A /* ListItemTestTests.m */; };
 		BA0B28511BF2CBBE0041BB5A /* ListItemTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0B28501BF2CBBE0041BB5A /* ListItemTestUITests.m */; };
+		BA0B28601BF2CC060041BB5A /* ListItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0B285F1BF2CC060041BB5A /* ListItemView.m */; };
+		BA0B28631BF2CC460041BB5A /* ListItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0B28621BF2CC460041BB5A /* ListItemModel.m */; };
+		BA732F3E1BFABF1E00357B95 /* ListView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA732F3D1BFABF1E00357B95 /* ListView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		BA0B284C1BF2CBBE0041BB5A /* ListItemTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListItemTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA0B28501BF2CBBE0041BB5A /* ListItemTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListItemTestUITests.m; sourceTree = "<group>"; };
 		BA0B28521BF2CBBE0041BB5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA0B285E1BF2CC060041BB5A /* ListItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListItemView.h; sourceTree = "<group>"; };
+		BA0B285F1BF2CC060041BB5A /* ListItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListItemView.m; sourceTree = "<group>"; };
+		BA0B28611BF2CC460041BB5A /* ListItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListItemModel.h; sourceTree = "<group>"; };
+		BA0B28621BF2CC460041BB5A /* ListItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListItemModel.m; sourceTree = "<group>"; };
+		BA732F3C1BFABF1E00357B95 /* ListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListView.h; sourceTree = "<group>"; };
+		BA732F3D1BFABF1E00357B95 /* ListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,12 @@
 				BA0B282F1BF2CBBE0041BB5A /* AppDelegate.m */,
 				BA0B28311BF2CBBE0041BB5A /* ViewController.h */,
 				BA0B28321BF2CBBE0041BB5A /* ViewController.m */,
+				BA732F3C1BFABF1E00357B95 /* ListView.h */,
+				BA732F3D1BFABF1E00357B95 /* ListView.m */,
+				BA0B285E1BF2CC060041BB5A /* ListItemView.h */,
+				BA0B285F1BF2CC060041BB5A /* ListItemView.m */,
+				BA0B28611BF2CC460041BB5A /* ListItemModel.h */,
+				BA0B28621BF2CC460041BB5A /* ListItemModel.m */,
 				BA0B28341BF2CBBE0041BB5A /* Main.storyboard */,
 				BA0B28371BF2CBBE0041BB5A /* Assets.xcassets */,
 				BA0B28391BF2CBBE0041BB5A /* LaunchScreen.storyboard */,
@@ -207,6 +222,7 @@
 				TargetAttributes = {
 					BA0B28271BF2CBBE0041BB5A = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 64294L2RRJ;
 					};
 					BA0B28401BF2CBBE0041BB5A = {
 						CreatedOnToolsVersion = 7.1;
@@ -272,7 +288,10 @@
 			files = (
 				BA0B28331BF2CBBE0041BB5A /* ViewController.m in Sources */,
 				BA0B28301BF2CBBE0041BB5A /* AppDelegate.m in Sources */,
+				BA0B28631BF2CC460041BB5A /* ListItemModel.m in Sources */,
 				BA0B282D1BF2CBBE0041BB5A /* main.m in Sources */,
+				BA732F3E1BFABF1E00357B95 /* ListView.m in Sources */,
+				BA0B28601BF2CC060041BB5A /* ListItemView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,10 +432,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ListItemTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.5i5j.ListItemTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -424,10 +447,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ListItemTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.5i5j.ListItemTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -498,6 +525,7 @@
 				BA0B28571BF2CBBE0041BB5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA0B28581BF2CBBE0041BB5A /* Build configuration list for PBXNativeTarget "ListItemTestTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +534,7 @@
 				BA0B285A1BF2CBBE0041BB5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA0B285B1BF2CBBE0041BB5A /* Build configuration list for PBXNativeTarget "ListItemTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +543,7 @@
 				BA0B285D1BF2CBBE0041BB5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
